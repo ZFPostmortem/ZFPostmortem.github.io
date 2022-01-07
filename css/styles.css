@@ -9,9 +9,9 @@ html {
 }
 
 @media (prefers-reduced-motion) {
-    html{
-        scroll-behavior: initial;
-    }
+  html {
+    scroll-behavior: initial;
+  }
 }
 
 body {
@@ -104,23 +104,23 @@ video {
 }
 
 .hero-button {
-    display: inline-block;
-    padding: .75rem 2rem;
-    background: none;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin-top: 2rem;
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 2rem;
 }
 
 .hero-button:hover {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .hero-button:active {
-    background: rgba(0,0,0,0.7)
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /*Portfolio Gallery styles*/
@@ -134,26 +134,59 @@ video {
 }
 
 .portfolio-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 0.5rem;
-    grid-auto-rows. 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.5rem;
+  grid-auto-rows: 300px;
 }
 
 .gallery-item {
-    height:100%;
-    width:100%;
-    overflow: hidden;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .gallery-img {
-    height:100%;
-    object-fit: cover;
-    transition: 0.5s ease-in-out;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
 }
 
 .gallery-img:hover {
-    transform: scale(1.5)
+  transform: scale(1.5);
+}
+
+/*About Styles */
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1rem auto 0 auto;
+}
+
+.about-text {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-text h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.about-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-social {
+  display: flex;
+  justify-content: start;
+}
+
+.about-social a {
+  color: black;
+  padding: 0 1rem 1rem 1rem;
 }
 
 /* Add Media Queries for large screens */
@@ -171,9 +204,20 @@ video {
     padding: 2rem;
   }
 
-  .portfolio-container h1 {
-      font-size: 3rem;
-      line-height: 3rem;
+  .portfolio-container h1,
+  .about-text h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -182,12 +226,18 @@ video {
     font-size: 6rem;
     line-height: 6rem;
   }
-  .portfolio-container {
-      max-width: 1400px;
-
+  .portfolio-container,
+  .about-container {
+    max-width: 1400px;
   }
-  .portfolio-container h1 {
-      font-size: 4rem;
-      line-height: 4rem;
+  .portfolio-container h1,
+  .about-text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .about-text p {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
