@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
     <title>My Portfolio</title>
   </head>
   <body>
@@ -21,8 +22,131 @@
       <section class="hero-text-box">
         <h1 class="hero-heading">Postmortem</h1>
         <p class="hero-text">Creativity doesn't end with life</p>
+        <p>
+            <a href="#portfolio">
+                <button type="button" class="hero-button">View Portfolio</button>
+            </a>
+        </p>
       </section>
     </header>
     <!--End Hero Header-->
+
+    <!--Begin portfolio-->
+    <section id="portfolio" class="portfolio-container">
+      <h1>Portfolio</h1>
+      <section class="portfolio-gallery">
+        <div class="gallery-item">
+          <a href="img/agent-45-aurora-mountains.jpg" class="glightbox" data-glightbox="title: Aurora Airship; description: 3D Composite in Photoshop and Blender">
+            <img
+              src="img/agent-45-aurora-mountains.jpg"
+              alt="Image of Airship"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="img/20211020 Dunstone Agent Color 3.3 DSN.jpg"
+            class="glightbox"
+          >
+            <img
+              src="img/20211020 Dunstone Agent Color 3.3 DSN.jpg"
+              alt="Image of Brick Wall"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+        <div class="gallery-item">
+            <a
+              href="img/Airsprite model.jpg"
+              class="glightbox"
+            >
+              <img
+                src="img/Airsprite model.jpg"
+                alt="Image of Airsprite"
+                class="gallery-img"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="gallery-item">
+            <a
+              href="img/Airsprite toy.jpg"
+              class="glightbox"
+            >
+              <img
+                src="img/Airsprite toy.jpg"
+                alt="Image of Airsprite toy"
+                class="gallery-img"
+              />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a
+              href="img/busstop.jpg"
+              class="glightbox"
+            >
+              <img
+                src="img/busstop.jpg"
+                alt="Image of Bus stop"
+                class="gallery-img"
+              />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a
+              href="img/agent-45-biike.jpg"
+              class="glightbox"
+            >
+              <img
+                src="img/agent-45-biike.jpg"
+                alt="Image of motorcycle"
+                class="gallery-img"
+              />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a
+              href="img/20212911 Dunstone Agent Obs Final (1).jpg"
+              class="glightbox"
+            >
+              <img
+                src="img/20212911 Dunstone Agent Obs Final (1).jpg"
+                alt="Image of comic book cover"
+                class="gallery-img"
+              />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a
+              href="img/20211611 Dunstone Agent tile project DSN.jpg"
+              class="glightbox"
+            >
+              <img
+                src="img/20211611 Dunstone Agent tile project DSN.jpg"
+                alt="Image of tiles"
+                class="gallery-img"
+              />
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a
+              href="img/20211012 Dunstone Agent Perspective Drawing.jpg"
+              class="glightbox"
+            >
+              <img
+                src="img/20211012 Dunstone Agent Perspective Drawing.jpg"
+                alt="Image of Church"
+                class="gallery-img"
+              />
+            </a>
+          </div>
+      </section>
+    </section>
+    <!--End Portfolio-->
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
